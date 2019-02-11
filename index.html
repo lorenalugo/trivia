@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"> 
+	<title>Trivia</title>
+</head>
+<body>
+<div class="bg" id="bg">
+	<div id="first">
+		<h2>Bienvenido a</h2>
+		<h1>Movie Trivia</h1>
+		<p>¿Cuál es tu nombre?</p>
+		<form>
+			<input id="name" type="text" placeholder="Ingresa tu nombre">
+		</form>
+		<button id="start-btn">Let's Play!</button>
+		<p id="message"></p>
+	</div>
+
+	<div id="second" class="none">
+		<h2 id="hello"></h2>
+		<h3>Escoge un tema</h3>
+		<button id="ciencia-btn">Ciencia Ficción</button>
+		<button id="terror-btn">Terror</button>
+	</div>
+</div>
+<div id="third">
+    <div id="ciencia">
+      <div id="question1" class="questions">
+          <h2>¿Cuál es la identidad de Ironman?</h2>
+          <form id="question1-form">
+            <input type="radio" name="question1" value="bruce wayne">Bruce Wayne<br>
+            <input type="radio" name="question1" value="tony stark">Tony Stark<br>
+            <input type="radio" name="question1" value="peter parker">Peter Parker<br>
+          </form>
+          <a class="next-btn"href="#question2">Siguiente</a>
+      </div>
+      <div id="question2" class="questions">
+          <h2>¿Cómo se mantiene Hulk tranquilo?</h2>
+          <form id="question2-form">
+            <input type="radio" name="question2" value="yoga">Yoga<br>
+            <input type="radio" name="question2" value="reiki">Reiki<br>
+            <input type="radio" name="question2" value="siempre esta furioso">Siempre esta furioso<br>
+          </form>
+          <a class="next-btn" href="#question3">Siguiente</a>
+      </div>
+      <div id="question3" class="questions">
+          <h2>¿Cuál es el color de cabello de Mary Jane?</h2>
+          <form id="question3-form">
+            <input type="radio" name="question3" value="negro">Negro<br>
+            <input type="radio" name="question3" value="rubio">Rubio<br>
+            <input type="radio" name="question3" value="rojo">Rojo<br>
+          </form>
+          <a class="next-btn" href="#fourth">Finalizar</a>
+      </div>
+    </div>
+    <div id="terror">
+			<div id="question1" class="questions">
+				<h2>¿En cuál país se desarrolla  La Purga?</h2>
+				<form id="tQuestion1-form">
+					<input type="radio" name="question1" value="eeuu">EEUU<br>
+					<input type="radio" name="question1" value="francia">Francia<br>
+					<input type="radio" name="question1" value="colombia">Colombia<br>
+				</form>
+				<a class="next-btn"href="#tQuestion2">Siguiente</a>
+			</div>
+			<div id="tQuestion2" class="questions">
+				<h2>¿Cómo destruyeron a Annabelle?</h2>
+				<form id="tQuestion2-form">
+					<input type="radio" name="question2" value="fuego">Fuego<br>
+					<input type="radio" name="question2" value="electricidad">Electricidad<br>
+					<input type="radio" name="question2" value="ninguna">Ninguna<br>
+				</form>
+				<a class="next-btn"href="#tQuestion3">Siguiente</a>
+			</div>
+			<div id="tQuestion3" class="questions">
+				<h2>¿Cómo se llama la protagonista del Exorcista?</h2>
+				<form id="tQuestion3-form">
+					<input type="radio" name="question3" value="linda">Linda<br>
+					<input type="radio" name="question3" value="Anne">Anne<br>
+					<input type="radio" name="question3" value="sabrina">Sabrina<br>
+				</form>
+				<a class="next-btn" href="#fourth">Finalizar</a>
+			</div>
+		</div>
+ </div>
+<div id="fourth">
+	<h2>Resultado</h2>
+	<p id="result"></p>
+	<h2>¿Quieres volver a jugar?</h2>
+		<button id="back-ciencia-btn">Ciencia Ficción</button>
+		<button id="back-terror-btn">Terror</button>
+</div>
+	<script src="script.js"></script>
+</body>
+</html>
