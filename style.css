@@ -44,7 +44,7 @@ a {
 	line-height: 1;
 }
 
-#second, #third, #fourth, #ciencia, #terror {
+.none {
 	display: none;
 }
 
